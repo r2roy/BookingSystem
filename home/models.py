@@ -46,6 +46,18 @@ class Feedback(models.Model):
     def __str__(self):
         return self.name
 
+class Booking(models.Model):
+    name = models.CharField(max_length=500)
+    slug = models.CharField(max_length=500)
+    email = models.CharField(max_length=500)
+    date = models.DateTimeField(auto_now_add=True)
+    request = models.TextField(blank=True)
+    quantity = models.FloatField(default=1)
+    checkout = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.name
+
 
 
 
