@@ -1,70 +1,76 @@
-{% extends 'base.html '%}
+{% extends 'base.html' %}
 {% load static %}
 {% block content %}
 
-        <!-- Login Start -->
-        <div class="login">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="register-form">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>First Name</label>
-                                    <input class="form-control" type="text" placeholder="First Name">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Last Name"</label>
-                                    <input class="form-control" type="text" placeholder="Last Name">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>E-mail</label>
-                                    <input class="form-control" type="text" placeholder="E-mail">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Mobile No</label>
-                                    <input class="form-control" type="text" placeholder="Mobile No">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Password</label>
-                                    <input class="form-control" type="text" placeholder="Password">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Retype Password</label>
-                                    <input class="form-control" type="text" placeholder="Password">
-                                </div>
-                                <div class="col-md-12">
-                                    <button class="btn">Submit</button>
-                                </div>
-                            </div>
+<center>
+<!-- Login Start -->
+<div class="login py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Register Form -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="register-form bg-light p-4 rounded shadow-sm">
+                    <h4 class="mb-4">Register</h4>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="first-name" class="form-label">First Name</label>
+                            <input id="first-name" class="form-control" type="text" placeholder="First Name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="last-name" class="form-label">Last Name</label>
+                            <input id="last-name" class="form-control" type="text" placeholder="Last Name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input id="email" class="form-control" type="email" placeholder="E-mail">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="mobile" class="form-label">Mobile No</label>
+                            <input id="mobile" class="form-control" type="text" placeholder="Mobile No">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="password" class="form-label">Password</label>
+                            <input id="password" class="form-control" type="password" placeholder="Password">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="retype-password" class="form-label">Retype Password</label>
+                            <input id="retype-password" class="form-control" type="password" placeholder="Retype Password">
+                        </div>
+                        <div class="col-md-12">
+                            <button class="btn btn-primary w-100">Submit</button>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="login-form">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>E-mail / Username</label>
-                                    <input class="form-control" type="text" placeholder="E-mail / Username">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Password</label>
-                                    <input class="form-control" type="text" placeholder="Password">
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="newaccount">
-                                        <label class="custom-control-label" for="newaccount">Keep me signed in</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <button class="btn">Submit</button>
-                                </div>
+                </div>
+            </div>
+            <!-- Login Form -->
+            <div class="col-lg-6">
+                <div class="login-form bg-light p-4 rounded shadow-sm">
+                    <h4 class="mb-4">Login</h4>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="login-email" class="form-label">E-mail / Username</label>
+                            <input id="login-email" class="form-control" type="text" placeholder="E-mail / Username">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="login-password" class="form-label">Password</label>
+                            <input id="login-password" class="form-control" type="password" placeholder="Password">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="keep-signed-in">
+                                <label class="form-check-label" for="keep-signed-in">Keep me signed in</label>
                             </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="btn btn-primary w-100">Submit</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Login End -->
+    </div>
+</div>
+<!-- Login End -->
+</center>
 
 {% endblock %}
